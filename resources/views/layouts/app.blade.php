@@ -22,34 +22,34 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="{{ route('home') }}">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/cities">City</a>
+        <a class="nav-link" href="{{ route('cities.index') }}">City</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/companies">Company</a>
+        <a class="nav-link" href="{{ route('companies.index') }}">Company</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/contracts">Contract</a>
+        <a class="nav-link" href="{{ route('contracts.index') }}">Contract</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/countries">Country</a>
+        <a class="nav-link" href="{{ route('countries.index') }}">Country</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/goods">Good</a>
+        <a class="nav-link" href="{{ route('goods.index') }}">Good</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/invoices">Invoice</a>
+        <a class="nav-link" href="{{ route('invoices.index') }}">Invoice</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/offices">Office</a>
+        <a class="nav-link" href="{{ route('offices.index') }}">Office</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/suppliers">Supplier</a>
+        <a class="nav-link" href="{{ route('suppliers.index') }}">Supplier</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/users">User</a>
+        <a class="nav-link" href="{{ route('users.index') }}">User</a>
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
