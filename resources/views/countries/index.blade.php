@@ -4,11 +4,13 @@
 
 
 @section('content')
-<table class="table table-striped">
+<a href="{{ route('countries.create')  }}" class= "btn btn-primary mt-5">Add</a>
+<table class="table table-striped mt-3">
   <thead>
     <tr>
       <th scope="col">ID</th>
       <th scope="col">Name</th>
+      <th>Actions</th>
 
     </tr>
   </thead>
@@ -19,8 +21,11 @@
 
     <td>{{ $country->id}}</td>
     <td>{{ $country->name}}</td>
-    <td></td>
-    <td></td>
+    <td>
+    <a class="btn btn-outline-primary" href="{{ route ('countries.show', ['country' => $country->id ] ) }} ">Details</a>
+    <a class="btn btn-outline-primary" href="{{ route ('countries.edit', ['country' => $country->id ] ) }}">Edit</a>
+    </td>
+  
 </tr>
 @endforeach
   </tbody>
