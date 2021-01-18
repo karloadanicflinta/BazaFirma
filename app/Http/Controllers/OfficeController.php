@@ -48,7 +48,7 @@ class OfficeController extends Controller
     public function show($id)
     {
         $office = Office::findOrFail($id);
-     dd($office);
+        return view('offices.show', compact('office'));
     }
 
     /**

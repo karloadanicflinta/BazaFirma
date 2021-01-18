@@ -14,4 +14,12 @@ class Company extends Model
         'IBAN',
         'SWIFT',
     ];
+
+    public function companies() { return $this->hasMany(User::class); }
+
+    public function company() { return $this->hasMany(Office::class); }
+
+    public function invoice() { return $this->hasMany(Invoice::class); }
+
+
 }

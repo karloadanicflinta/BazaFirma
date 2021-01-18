@@ -10,6 +10,14 @@ class City extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name'
+        'name',
+        'country_id',
     ];
+
+    public function cities() { return $this->hasMany(User::class); }
+    public function city() { return $this->hasMany(Office::class); }
+
+
+    public function country() { return $this->belongsTo(Country::class); }
+
 }

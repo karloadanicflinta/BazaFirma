@@ -49,7 +49,7 @@ class ContractController extends Controller
     public function show($id)
     {
         $contract = Contract::findOrFail($id);
-        dd($contract);
+        return view('contracts.show', compact('contract'));
     }
 
     /**

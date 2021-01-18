@@ -15,4 +15,9 @@ class Invoice extends Model
         'due_date'
 
     ];
+
+    public function company() { return $this->belongsTo(Company::class); }
+    public function supplier() { return $this->belongsTo(Supplier::class); }
+    public function good() { return $this->belongsTo(Good::class); }
+
 }

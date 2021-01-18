@@ -21,8 +21,8 @@ class DatabaseSeeder extends Seeder
             CompanySeeder::class,
             OfficeSeeder::class,
             SupplierSeeder::class,
-            InvoiceSeeder::class,
             GoodSeeder::class,
+            InvoiceSeeder::class,
             SuppliedGoodSeeder::class,
             CompanyGoodSeeder::class,
             UserSeeder::class

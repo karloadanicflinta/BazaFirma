@@ -48,7 +48,7 @@ class GoodController extends Controller
     public function show($id)
     {
         $good = Good::findOrFail($id);
-     dd($good);
+        return view('goods.show', compact('good'));
     }
 
     /**

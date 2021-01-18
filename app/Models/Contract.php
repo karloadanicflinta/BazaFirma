@@ -12,4 +12,8 @@ class Contract extends Model
     protected $fillable = [
         'name'
     ];
+
+    public function contracts() { return $this->hasMany(User::class); }
+
+
 }

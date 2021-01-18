@@ -12,4 +12,11 @@ class Good extends Model
     protected $fillable = [
         'name'
     ];
+
+
+    public function countries() { return $this->belongsTo(Supplier::class); }
+
+
+    public function invoices() { return $this->hasMany(Invoice::class); }
+
 }

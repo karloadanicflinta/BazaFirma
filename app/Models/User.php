@@ -20,7 +20,22 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'country_id',
+        'city_id',
+        'contract_id',
+        'company_id',
     ];
+
+
+
+     public function country() { return $this->belongsTo(Country::class); }
+     public function city() { return $this->belongsTo(City::class); }
+     public function contract() { return $this->belongsTo(Contract::class); }
+     public function company() { return $this->belongsTo(Company::class); }
+
+
+
+
 
     /**
      * The attributes that should be hidden for arrays.

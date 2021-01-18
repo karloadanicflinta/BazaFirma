@@ -10,6 +10,7 @@
     <tr>
       <th scope="col">ID</th>
       <th scope="col">Name</th>
+      <th scope="col">Last Name</th>
       <th>Actions</th>
 
     </tr>
@@ -20,7 +21,8 @@
 <tr>
 
     <td>{{ $user->id}}</td>
-    <td>{{ $user->name}}</td>
+    <td>{{ $user->first_name}}</td>
+    <td>{{ $user->last_name}}</td>
 
 <td>
     <a class="btn btn-outline-primary" href="{{ route ('users.show', ['user' => $user->id ] ) }} ">Details</a>
