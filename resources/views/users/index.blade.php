@@ -23,6 +23,7 @@
     <td>{{ $user->id}}</td>
     <td>{{ $user->first_name}}</td>
     <td>{{ $user->last_name}}</td>
+    <td>{{ $user->country->name}}</td>
 
 <td>
     <a class="btn btn-outline-primary" href="{{ route ('users.show', ['user' => $user->id ] ) }} ">Details</a>

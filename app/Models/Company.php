@@ -21,5 +21,7 @@ class Company extends Model
 
     public function invoice() { return $this->hasMany(Invoice::class); }
 
+    public function goods() { return $this->belongsToMany(Good::class); }
+
 
 }

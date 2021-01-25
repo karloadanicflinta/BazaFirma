@@ -14,7 +14,7 @@ class GoodController extends Controller
      */
     public function index()
     {
-        $goods = Good::paginate();
+        $goods = Good::with(['countries', 'goods', 'goodsupplied']) -> paginate();
         return view('goods.index', compact('goods'));
     }
 

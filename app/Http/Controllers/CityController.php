@@ -14,7 +14,7 @@ class CityController extends Controller
      */
     public function index()
     {
-        $cities = City::paginate();
+        $cities = City::with(['country']) -> paginate();
         return view('cities.index', compact('cities'));
     }
 

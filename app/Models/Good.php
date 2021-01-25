@@ -19,4 +19,10 @@ class Good extends Model
 
     public function invoices() { return $this->hasMany(Invoice::class); }
 
+
+    public function goods() { return $this->belongsToMany(Company::class); }
+
+
+    public function goodsupplied() { return $this->belongsToMany(Supplier::class); }
+
 }

@@ -14,7 +14,7 @@ class SupplierController extends Controller
      */
     public function index()
     {
-        $suppliers = Supplier::paginate();
+        $suppliers = Supplier::with (['country', 'goods']) -> paginate();
         return view('suppliers.index', compact('suppliers'));
     }
 
